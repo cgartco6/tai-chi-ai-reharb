@@ -1,0 +1,66 @@
+# Tai Chi AI Rehabilitation Program - Default Configuration
+
+program:
+  name: "Tai Chi AI Rehabilitation"
+  version: "1.0.0"
+  duration_weeks: 52
+  max_daily_duration: 60
+  min_daily_duration: 10
+
+phases:
+  foundation:
+    duration_weeks: 12
+    focus: "basic movements and breathing"
+    intensity: "low"
+    
+  building:
+    duration_weeks: 12  
+    focus: "coordination and flow"
+    intensity: "medium"
+    
+  integration:
+    duration_weeks: 12
+    focus: "form sequences and energy circulation"
+    intensity: "medium-high"
+    
+  mastery:
+    duration_weeks: 16
+    focus: "advanced practice and mindfulness"
+    intensity: "high"
+
+safety:
+  pain_thresholds:
+    red: 7
+    yellow: 4
+    green: 3
+    
+  fatigue_thresholds:
+    red: 8
+    yellow: 5
+    green: 4
+    
+  completion_threshold: 50
+
+ai_agents:
+  coach_agent:
+    analysis_depth: "comprehensive"
+    update_frequency: "weekly"
+    
+  tracker_agent:
+    data_retention_days: 365
+    analysis_window: 4
+    
+  safety_agent:
+    alert_level: "standard"
+    emergency_contacts: []
+
+logging:
+  level: "INFO"
+  file: "logs/tai_chi_ai.log"
+  max_size_mb: 10
+  backup_count: 5
+
+user:
+  default_frequency: 3
+  max_sessions_per_week: 7
+  rest_days_per_week: 1
